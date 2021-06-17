@@ -24,6 +24,7 @@ nav {
     justify-content: space-around;
     background-color: #FFFFFF;
     color: #5e615c;
+    border-bottom: 1px solid #bcbdbb;
     
 }
 nav ul {
@@ -47,9 +48,18 @@ nav ul li {
   width: 30em;
   background-color: rgb(219, 219, 219);
   margin-top: 5%;
+ /* margin-bottom: 30px;*/
   padding: 3%;
   margin-bottom: 1em;
 }
 .noticia img {
     width: 100%;
   }
+
+footer {
+    text-align: center;
+    background-color: rgb(219, 219, 219);
+    height: 3em;
+    color: rgb(65, 60, 65);
+    padding-top: 2em;
+} 
