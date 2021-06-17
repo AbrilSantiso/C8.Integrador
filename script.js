@@ -1,4 +1,7 @@
-contenedor = document.querySelector(".contenedorNoticias");
+window.addEventListener("load",()=>{
+    crearNoticia();
+} )
+
 const noticias = [
 {
     titulo:"Turismo de vacunas: 2.000 personas por día reciben su dosis en el aeropuerto de Miami",
@@ -39,10 +42,30 @@ const noticias = [
 
 ]
 
+
+function renderizarNoticia(noticia){   
 const template =`
 <div class="noticia">
-      <img src="${imgUrl}">
-      <h2>${titulo}</h2>
-      <p>${descripcion}</p>
+    <i class="fas fa-globe-americas mundo"></i>
+      <img src="${noticia.imgUrl}">
+      <h2>${noticia.titulo}</h2>
+      <p>${noticia.descripcion}</p>
     </div>
 `; 
+const contenedor = document.querySelector(".contenedorNoticias");
+contenedor.innerHTML += template
+}
+
+function crearNoticia(){
+    noticias.forEach(noticia =>{
+        renderizarNoticia(noticia);
+        filtrarNacionales(noticia)
+    })
+};
+
+function filtrarNacionales(noticia){
+    const mundito = document.querySelector(".mundo")
+if(noticia.tipoNacional == false){
+    mundito.style.display = "none";
+}
+}
