@@ -38,3 +38,11 @@ const noticias = [
  
 
 ]
+
+const template =`
+<div class="noticia">
+      <img src="${imgUrl}">
+      <h2>${titulo}</h2>
+      <p>${descripcion}</p>
+    </div>
+`; 
