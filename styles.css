@@ -63,3 +63,10 @@ footer {
     color: rgb(65, 60, 65);
     padding-top: 2em;
 } 
+
+#m-booked-bl-simple-5822 {
+  position: fixed;
+  left: 87%;
+  bottom: 50%;
+
+}
